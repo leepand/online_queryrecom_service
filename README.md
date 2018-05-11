@@ -1,3 +1,9 @@
+生产部署：
+
+gunicorn --preload firefly.main:app -e FIREFLY_FUNCTIONS="fire_server_recom_prod.recommend,fire_server_recom_prod.update_model" -e FIREFLY_TOKEN="abcd1234"
+
+
+
 模型更新：
 
 ```javascript
